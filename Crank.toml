@@ -1,5 +1,5 @@
 [[target]]
-    name = "tictactoe-playdate"
+    name = "tictactoe_playdate" # hyphens will not work. See https://github.com/pd-rs/crankstart/issues/89
     assets = [
         "assets/_background.png",
         "assets/_cross.png",
@@ -19,5 +19,5 @@
         "assets/launchImage.png",
     ]
     [target.metadata]
-    name = "Tic Tac Toe"
+    name = "TicTacToe"
     version = "0.1.0"
