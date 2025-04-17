@@ -1,0 +1,23 @@
+[[target]]
+    name = "tictactoe-playdate"
+    assets = [
+        "assets/_background.png",
+        "assets/_cross.png",
+        "assets/_game_over.png",
+        "assets/_game_tied.png",
+        "assets/_hand.png",
+        "assets/_level_1.png",
+        "assets/_level_2.png",
+        "assets/_level_3.png",
+        "assets/_level_4.png",
+        "assets/_level_5.png",
+        "assets/_level_6.png",
+        "assets/_level_7.png",
+        "assets/_nought.png",
+        "assets/_player_loses.png",
+        "assets/_player_wins.png",
+        "assets/launchImage.png",
+    ]
+    [target.metadata]
+    name = "Tic Tac Toe"
+    version = "0.1.0"
