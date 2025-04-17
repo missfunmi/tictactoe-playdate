@@ -4,6 +4,8 @@
 
 This is a version of the classic TicTacToe game that runs on the [Playdate](https://play.date) handheld gaming console. All of the code is written in Rust courtesy of the unofficial [crankstart](https://crates.io/crates/crankstart) library. It has only been tested on the Playdate simulator.
 
+![level 1 cover screen](docs/1.png) ![level 1 sample play](docs/2.png)
+
 ## Game Levels
 
 This version of TicTacToe has 7 increasingly chaotic levels as follows. Levels marked ✅ have been implemented, ❌ have not yet been implemented
