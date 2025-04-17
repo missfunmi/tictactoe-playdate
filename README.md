@@ -8,7 +8,7 @@ This is a version of the classic TicTacToe game that runs on the [Playdate](http
 
 ## Game Levels
 
-This version of TicTacToe has 7 increasingly chaotic levels as follows. Levels marked ✅ have been implemented, ❌ have not yet been implemented
+This version of TicTacToe has 7 increasingly chaotic levels as follows. Levels marked ✅ have been implemented, ❌ have not yet been implemented:
 
 | level | level name                             | rules                                                                                                                                               |
 |-------|----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -18,16 +18,20 @@ This version of TicTacToe has 7 increasingly chaotic levels as follows. Levels m
 | 4 ✅   | **unforgiving disappearing tictactoe** | same as level 3, except if you try to play in a cell already filled you lose                                                                        |
 | 5 ✅   | **reverse disappearing tictactoe**     | levels 2 and 3 combined                                                                                                                             |
 | 6 ✅   | **rearranging tictactoe**              | same rules as basic game play, except every turn, the x's and o's are shuffled                                                                      |
-| 7 ✅   | **murder tictactoe**                   | same rules as basic game play, except the human player gets one chance per game to override the computer's entry                                    |
+| 7 ✅   | **murder tictactoe**                   | same rules as basic game play, except the human player can choose to override the computer's entry instead of playing their turn                    |
 | 8 ❌   | **extra hard tictactoe**               | the computer employs the unbeatable [minimax algorithm](https://www.baeldung.com/java-minimax-algorithm) and will almost always win or tie the game |
 
 **Note**: at the end of each game, the player can choose to repeat the same level or advance to the next level
-regardless of game status (win, lose or tie).
+regardless of game status (win, lose or tie). Currently, scores are not tallied.
 
 ## Running the game
 
 ### Pre-requisites
-You'll need to be set up for Playdate game development with Rust -- follow the instructions on [crankstart](https://github.com/pd-rs/crankstart) if you haven't yet done so. Then update the location of the [crankstart](https://crates.io/crates/crankstart) and [crankstart-sys](https://crates.io/crates/crankstart-sys) crates specified in this project's dependencies in [Cargo.toml](Cargo.toml) if they differ from yours. The public crates should **probably** work (I haven't tested that yet); I made some modifications to those libraries locally that I haven't had a chance to submit PR's for yet.
+
+You'll need to be set up for Playdate game development with Rust:
+1. Install the Playdate SDK at https://play.date/dev. The SDK comes with the Playdate simulator.
+2. Install the `crank` command line tool by following the instructions on https://github.com/pd-rs/crank.
+3. Clone or download this project to your computer, then update the location of the `crankstart` and `crankstart-sys` dependencies in [Cargo.toml](Cargo.toml) to either point to the released dependencies on [crates.io](https://crates.io) or your local copy if you're using that. 
 
 ### Playing the game
 To play the game on the Playdate simulator, run the following command from the project root directory:
