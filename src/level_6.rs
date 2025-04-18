@@ -12,6 +12,7 @@ use crankstart::sprite::SpriteManager;
 use crankstart::system::System;
 use crankstart_sys::LCDBitmapFlip;
 
+// 6: rearranging tictactoe | every turn, the x's and o's are shuffled
 pub struct LevelSix {}
 
 impl LevelSix {
