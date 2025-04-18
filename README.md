@@ -1,4 +1,4 @@
-# TicTacToe: A Playdate game built in Rust
+# 😈 TicTacToe: A Playdate game built in Rust
 
 <a href='https://www.recurse.com/scout/click?t=c7bc9ba4cb3e6725e05e413f16f8c5a3' title='Made with love at the Recurse Center'><img src='https://cloud.githubusercontent.com/assets/2883345/11325206/336ea5f4-9150-11e5-9e90-d86ad31993d8.png' height='20px'/></a>
 
@@ -26,16 +26,35 @@ regardless of game status (win, lose or tie). Currently, scores are not tallied.
 
 ## Running the game
 
+This game has been tested with:
+- Rust 1.88.0-nightly (as of 2025-04-17)
+- Playdate SDK 2.6.2
+- Locally modified versions of `crankstart` and `crankstart-sys`
+
 ### Pre-requisites
 
 You'll need to be set up for Playdate game development with Rust:
-1. Install the Playdate SDK at https://play.date/dev. The SDK comes with the Playdate simulator.
-2. Install the `crank` command line tool by following the instructions on https://github.com/pd-rs/crank.
-3. Clone or download this project to your computer, then update the location of the `crankstart` and `crankstart-sys` dependencies in [Cargo.toml](Cargo.toml) to either point to the released dependencies on [crates.io](https://crates.io) or your local copy if you're using that. 
+1. Install Rust, of course. I recommend using `rustup`: https://www.rust-lang.org/tools/install.
+2. Install the Playdate SDK at https://play.date/dev. The SDK comes with the Playdate simulator.
+3. Install the `crank` command line tool by following the instructions on https://github.com/pd-rs/crank.
+4. Clone or download this project to your computer, then update the location of the `crankstart` and `crankstart-sys` dependencies in [Cargo.toml](Cargo.toml) to either point to the released dependencies on [crates.io](https://crates.io) or your local copy if you're using that. 
 
-### Playing the game
-To play the game on the Playdate simulator, run the following command from the project root directory:
+### To build and run the game on the Playdate simulator
+Run the following command from the project root directory:
 
 ```bash
 crank run --release
 ```
+
+### To build and run the game on the Playdate device
+You obviously need a Playdate first. 
+
+If you have one already, run the following command from the project root directory:
+
+```bash
+crank build --device --release
+```
+Compress the build file produced at `target/TicTacToe.pdx`. Then sideload it onto your Playdate at https://play.date/account/sideload
+
+### If you want to skip all that and just run the last version of the game on your Playdate
+Download the game file from the project [releases](releases/) (do not unzip it). Then sideload it onto your Playdate at https://play.date/account/sideload
