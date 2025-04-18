@@ -5,9 +5,11 @@ use crate::levels::Level;
 use alloc::boxed::Box;
 use anyhow::Error;
 use crankstart::graphics::Bitmap;
+use hashbrown::HashSet;
 
 pub struct LevelSeven {}
 
+// 7: murder tictactoe | you can choose to override the computer's entry instead of playing your turn
 impl LevelSeven {
     pub fn new() -> Self {
         Self {}
@@ -41,6 +43,17 @@ impl Level for LevelSeven {
                 .noughts
                 .retain(|nought| !selected_location.eq(&nought.get_position().unwrap()));
             game_state.computer_entries.remove(&player_selection);
+
+            // Lol, so bad
+            // Temporary workaround to re-insert the "murdered" computer play back into
+            // game_state.remaining_plays since I can't shuffle the hashset without more complex logic
+            // TODO probably should just redo default computer_play logic in levels.rs
+            let current_remaining_plays = &game_state.remaining_plays;
+            let mut updated_remaining_plays = HashSet::new();
+            updated_remaining_plays.insert(player_selection);
+            updated_remaining_plays.extend(current_remaining_plays);
+            game_state.remaining_plays = updated_remaining_plays;
+
             return Ok(true);
         }
 
