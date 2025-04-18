@@ -20,16 +20,18 @@
 - [x] Insert game over graphic after level 7
 - [x] Clean up commented out code
 - [x] Update README
-- [ ] Re-test all levels
+- [x] Re-test all levels
 - [x] Add a screenshot of the game to the README
 - [x] Check in to GitHub
+- [x] Modify to run on device
+- [x] Fix level 7 bug 
 
 ### Someday (Maybe?) List
 
-- [ ] Improve computer play algorithm for levels 1-7
-- [ ] Modify to run on device
+- [ ] Improve computer play algorithm for all levels
 - [ ] Do something with the crank?
 - [ ] Add music/sound
+- [ ] Add menu actions
 - [ ] Figure out how to get game launcher graphics working
 - [ ] Clear out all the TODOs
 - [ ] Tally scores
