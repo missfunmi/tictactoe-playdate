@@ -2,7 +2,7 @@
 
 <a href='https://www.recurse.com/scout/click?t=c7bc9ba4cb3e6725e05e413f16f8c5a3' title='Made with love at the Recurse Center'><img src='https://cloud.githubusercontent.com/assets/2883345/11325206/336ea5f4-9150-11e5-9e90-d86ad31993d8.png' height='20px'/></a>
 
-This is a version of the classic TicTacToe game that runs on the [Playdate](https://play.date) handheld gaming console. All of the code is written in Rust courtesy of the unofficial [crankstart](https://crates.io/crates/crankstart) library. It has only been tested on the Playdate simulator.
+This is a version of the classic TicTacToe game that runs on the [Playdate](https://play.date) handheld gaming console. All of the code is written in Rust courtesy of the unofficial [crankstart](https://crates.io/crates/crankstart) library.
 
 ![level 1 cover screen](docs/1.png) ![level 1 sample play](docs/2.png)
 
