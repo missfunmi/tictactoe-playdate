@@ -16,8 +16,12 @@
         "assets/_nought.png",
         "assets/_player_loses.png",
         "assets/_player_wins.png",
+        "assets/card.png",
         "assets/launchImage.png",
     ]
     [target.metadata]
     name = "TicTacToe"
     version = "0.1.0"
+    author = "missfunmi"
+    bundle_id = "com.missfunmi.tictactoe"
+    description = "😈TicTacToe: A classic game with increasingly chaotic levels"
