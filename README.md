@@ -57,4 +57,4 @@ crank build --device --release
 Compress the build file produced at `target/TicTacToe.pdx`. Then sideload it onto your Playdate at https://play.date/account/sideload
 
 ### If you want to skip all that and just run the last version of the game on your Playdate
-Download the game file from the project [releases](releases/) (do not unzip it). Then sideload it onto your Playdate at https://play.date/account/sideload
+Download the game file from the project [releases](../../releases/) (do not unzip it). Then sideload it onto your Playdate at https://play.date/account/sideload
