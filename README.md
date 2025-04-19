@@ -31,7 +31,7 @@ This game has been tested with:
 - Playdate SDK 2.6.2
 - Locally modified versions of `crankstart` and `crankstart-sys`
 
-### Pre-requisites
+### Pre-requisites for compiling the source code
 
 You'll need to be set up for Playdate game development with Rust:
 1. Install Rust, of course. I recommend using `rustup`: https://www.rust-lang.org/tools/install.
@@ -39,7 +39,7 @@ You'll need to be set up for Playdate game development with Rust:
 3. Install the `crank` command line tool by following the instructions on https://github.com/pd-rs/crank.
 4. Clone or download this project to your computer, then update the location of the `crankstart` and `crankstart-sys` dependencies in [Cargo.toml](Cargo.toml) to either point to the released dependencies on [crates.io](https://crates.io) or your local copy if you're using that. 
 
-### To build and run the game on the Playdate simulator
+### To build and run the game on the Playdate simulator (no device required)
 Run the following command from the project root directory:
 
 ```bash
@@ -56,5 +56,5 @@ crank build --device --release
 ```
 Compress the build file produced at `target/TicTacToe.pdx`. Then sideload it onto your Playdate at https://play.date/account/sideload
 
-### If you want to skip all that and just run the last version of the game on your Playdate
+### If you want to skip all that and directly install the game on your Playdate (without building the source code yourself)
 Download the game file from the project [releases](../../releases/) (do not unzip it). Then sideload it onto your Playdate at https://play.date/account/sideload
